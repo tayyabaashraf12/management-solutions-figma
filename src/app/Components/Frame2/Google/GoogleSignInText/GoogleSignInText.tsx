@@ -1,0 +1,13 @@
+import React from "react";
+
+type Props = {};
+
+const GoogleSignInText = (props: Props) => {
+  return (
+    <div className="w-[131px] h-[24px] absolute top-[279px] left-[173px] font-[Inter] font-semibold text-[14px] leading-[24px] text-[#FFFFFF] ">
+      Sign in with Google
+    </div>
+  );
+};
+
+export default GoogleSignInText;

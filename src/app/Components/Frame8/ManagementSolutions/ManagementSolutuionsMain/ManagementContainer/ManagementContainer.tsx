@@ -1,0 +1,17 @@
+import React from "react";
+import ManagementContainerText1 from "./ManagementContainerText/ManagementContainerText1";
+import ManagementContainerText2 from "./ManagementContainerText/ManagementContainerText2";
+import InventoryContainer from "./InventoryContainer/InventoryContainer";
+
+type Props = {};
+
+const ManagementContainer = (props: Props) => {
+  return (
+    <div className="w-[628px] h-[276.5px]    absolute top-[332px] left-[139px] border-4 border-black">
+      <ManagementContainerText1 />
+      <InventoryContainer />
+      <ManagementContainerText2 />
+    </div>
+  );
+};
+export default ManagementContainer;

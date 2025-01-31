@@ -1,0 +1,15 @@
+import React from "react";
+import Icon from "./Icon/Icon";
+import Text from "./Text/Text";
+
+type Props = {};
+
+const SearchRectangle = (props: Props) => {
+  return (
+    <div className="w-[217.28px] h-[40px] flex items-center gap-[4] border border-red-600 rounded-[12px] text-[#FFFFFF]">
+      <Icon />
+      <Text />
+    </div>
+  );
+};
+export default SearchRectangle;
