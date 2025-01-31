@@ -7,7 +7,7 @@ type Props = {};
 
 const SelectOrganization = (props: Props) => {
   return (
-    <div className="w-[306px] h-[134px] relative top-[498px] left-[565px] flex flex-col justify-center gap-4 ">
+    <div className="w-[306px] h-[134px] relative top-[390px] left-[565px] flex flex-col justify-center gap-4 ">
       <SelectOrganizationText />
       <OrganizationBadgeGroup1 />
       <OrganizationBadgeGroup2 />

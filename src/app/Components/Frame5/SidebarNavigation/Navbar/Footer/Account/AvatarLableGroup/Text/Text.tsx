@@ -7,7 +7,7 @@ type Props = {};
 
 const Text = (props: Props) => {
   return (
-    <div className="w-[137px] border border-blue-950  h-[40px]  ">
+    <div className="w-[137px]  h-[40px]  ">
       <Text1 />
       <Text2 />
     </div>

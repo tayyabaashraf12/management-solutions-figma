@@ -6,7 +6,7 @@ type Props = {};
 
 const SearchRectangle = (props: Props) => {
   return (
-    <div className="w-[217.28px] h-[40px] flex items-center gap-[4] border border-red-600 rounded-[12px] text-[#FFFFFF]">
+    <div className="w-[217.28px] h-[40px] flex items-center gap-3  text-[#FFFFFF]">
       <Icon />
       <Text />
     </div>

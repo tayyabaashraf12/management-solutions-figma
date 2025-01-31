@@ -6,7 +6,7 @@ type Props = {};
 
 const Badge2 = (props: Props) => {
   return (
-    <div className="w-[32px] h-[32px] rounded-[23px] text-lg  py-[2px] px-[10px] border border-red-50 flex gap-1">
+    <div className="w-[32px] h-[32px] rounded-[23px] text-lg  py-[2px]   flex gap-1">
       <Image src={Badge2Arrow} alt="Badge2Arrow" className=" " />
     </div>
   );

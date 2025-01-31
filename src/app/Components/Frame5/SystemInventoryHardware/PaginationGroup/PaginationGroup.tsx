@@ -6,7 +6,7 @@ type Props = {};
 
 const PaginationGroup = (props: Props) => {
   return (
-    <div className="w-[285px]  h-[38px] relative flex top-[893px] left-[663px] border-2 border-red-400">
+    <div className="w-[285px]  h-[38px] relative flex top-[893px] left-[663px] ">
       <PaginationFrame1 />
       <PaginationFrame2 />
     </div>

@@ -12,6 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"], // Add Roboto
+        koulen: ["Koulen"], // Add Koulen
+        inter: ["Inter"],
+        poppins: ["Poppins"],
+      },
+      opacity: {
+        "58": "0.58",
+      },
     },
   },
   plugins: [],

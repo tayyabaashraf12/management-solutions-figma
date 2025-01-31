@@ -4,15 +4,21 @@ import BadgeGroup from "./BadgeGroup/BadgeGroup";
 
 import Google from "./Google/Google";
 import ManagementSolutions from "./ManagementSolutions/ManagementSolutions";
+import FrameLogosContainer from "./FrameLogosContainer/FrameLogosContainer";
+import TextContainer from "./TextContainer/TextContainer";
 
 type Props = {};
 
 const Frame2 = (props: Props) => {
   return (
-    <div className="w-[1440px] h-[1024px]  bg-[#071410] relative">
-      <Welcome />
-      <BadgeGroup />
-      <Google />
+    <div className="w-[1440px] h-[1024px] top-[7062px] flex bg-[#071410] left-[7597px]">
+      <div>
+        <FrameLogosContainer />
+        <Welcome />
+        <BadgeGroup />
+        <Google />
+        <TextContainer />
+      </div>
       <ManagementSolutions />
     </div>
   );

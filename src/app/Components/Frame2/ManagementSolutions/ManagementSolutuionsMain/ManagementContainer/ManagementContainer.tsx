@@ -7,7 +7,7 @@ type Props = {};
 
 const ManagementContainer = (props: Props) => {
   return (
-    <div className="w-[628px] h-[276.5px]    absolute top-[332px] left-[139px] border-4 border-black">
+    <div className="w-[628px] h-[276.5px]    absolute top-[332px] left-[139px] ">
       <ManagementContainerText1 />
       <InventoryContainer />
       <ManagementContainerText2 />

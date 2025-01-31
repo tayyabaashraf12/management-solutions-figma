@@ -12,7 +12,7 @@ type Props = {};
 
 const Navigation = (props: Props) => {
   return (
-    <div className="w-[280px] h-[348px] px-[16px] flex flex-col gap-[4px]  ">
+    <div className="w-[280px] h-[348px]  px-[16px] flex flex-col gap-[4px]  ">
       <NavItem1 />
       <NavItem2 />
       <NavItem3 />

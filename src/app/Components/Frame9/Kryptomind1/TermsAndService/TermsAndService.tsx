@@ -5,11 +5,11 @@ type Props = {};
 const TermsAndService = (props: Props) => {
   return (
     <div
-      className="w-[164px] h-[13px]   top-[972px] left-[1197px] 
-  font-roboto font-bold text-[10px] leading-[12.5px] text-white"
+      className="w-[200px] h-[13px]  top-[972px] left-[1197px] 
+  font-roboto font-bold text-[12px] leading-[12.5px] text-[#FFFFFF]"
     >
-      terms of service &{" "}
-      <span className="font-normal text-[10px] leading-[12.5px] ">
+      terms of service <span className="text-[#FFFFFF] font-bold">&</span>
+      <span className="font-bold  font-roboto text-[12px] leading-[12.5px] text-[#FFFFFF]">
         {" "}
         privacy policies.
       </span>

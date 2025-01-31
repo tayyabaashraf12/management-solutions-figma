@@ -9,7 +9,7 @@ const Rectangles = (props: Props) => {
     <Image
       src={RectanglesLogo}
       alt="Rectangles Logo"
-      className=" relative w-[37.48px] h-[40px] top-[74px] left-[80px]  border border-red-50"
+      className=" relative w-[37.48px] h-[40px] top-[74px] left-[80px]  "
     />
   );
 };

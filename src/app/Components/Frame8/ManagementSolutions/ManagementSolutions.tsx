@@ -5,7 +5,7 @@ type Props = {};
 
 const ManagementSolutions = (props: Props) => {
   return (
-    <div className="w-[990px] h-[1024px] left-[450px] bg-white   bg-left-top absolute ">
+    <div className="w-[990px] h-[1024px] left-[450px] bg-[#FFFFFF]   bg-left-top absolute ">
       <ManagementSolutuionsMain />
     </div>
   );

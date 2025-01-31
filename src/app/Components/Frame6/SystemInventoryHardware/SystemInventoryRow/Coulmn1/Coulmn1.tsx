@@ -7,7 +7,7 @@ type Props = {};
 
 const Coulmn1 = (props: Props) => {
   return (
-    <div className="w-[273px] h-[188px] top-[167px] left-[28px] ">
+    <div className="w-[325px] h-[188px] top-[167px] left-[40px] ">
       <TableHeader />
       <TableCell1 />
       <TableCell2 />

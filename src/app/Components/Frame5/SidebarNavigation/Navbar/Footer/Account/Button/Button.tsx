@@ -5,7 +5,7 @@ type Props = {};
 
 const Button = (props: Props) => {
   return (
-    <div className="w-[36px] h-[36px] rounded-[8px]  gap-2 border">
+    <div className="w-[36px] h-[36px] rounded-[8px]  gap-2 ">
       <LogoutButton />
     </div>
   );

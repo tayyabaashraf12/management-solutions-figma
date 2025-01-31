@@ -7,7 +7,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <div className="w-[280px] h-[476px] pr-[16px] pb-[32px] pl-[16px] flex flex-col gap-[24px] border border-red-800">
+    <div className="w-[280px] h-[476px] pr-[16px] pb-[32px] pl-[16px] flex flex-col gap-[24px] ">
       <NavFeatureCard />
       <Navigation />
       <Account />

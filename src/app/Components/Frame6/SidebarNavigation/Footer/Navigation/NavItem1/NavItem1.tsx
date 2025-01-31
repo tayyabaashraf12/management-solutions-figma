@@ -5,7 +5,7 @@ type Props = {};
 
 const NavItem1 = (props: Props) => {
   return (
-    <div className="w-[48px] border border-red-600 h-[48px] rounded-[6px] p-3 bg-[#FFFFFF00] gap-[8px]">
+    <div className="w-[48px]  h-[48px] rounded-[6px] p-3 bg-[#FFFFFF00] gap-[8px]">
       <Icon />
     </div>
   );

@@ -6,7 +6,7 @@ type Props = {};
 
 const OrganizationProfilePicture = (props: Props) => {
   return (
-    <div className="w-[72px] h-[72px] top-[370px] left-[682px] relative border border-red-50">
+    <div className="w-[72px] h-[72px] top-[370px] left-[682px] relative ">
       <Image src={OrganizationProfilePic} alt="OrganizationProfilePic" />
     </div>
   );

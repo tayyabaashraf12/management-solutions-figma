@@ -8,7 +8,7 @@ type Props = {};
 
 const ManagementSolutuionsMain = (props: Props) => {
   return (
-    <div className="w-[906px] h-[940px] absolute top-[42px] left-[42px] rounded-[45px] bg-[#F15B6C] ">
+    <div className="w-[906px] h-[940px] absolute top-[42px] left-[42px] rounded-[45px] bg-[#F15B6C] bg-opacity-58 ">
       <Image
         src={Barcodeamico1}
         alt="Barcode-Amico1"

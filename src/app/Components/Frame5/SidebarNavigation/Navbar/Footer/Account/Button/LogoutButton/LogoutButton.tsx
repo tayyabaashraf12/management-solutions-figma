@@ -8,7 +8,7 @@ const LogoutButton = (props: Props) => {
     <Image
       src={LogOutIcon}
       alt="LogOutIcon"
-      className="w-[36px] h-[36px] rounded-[8px]  border border-blue-950 absolute"
+      className="w-[36px] h-[36px] rounded-[8px] absolute"
     />
   );
 };

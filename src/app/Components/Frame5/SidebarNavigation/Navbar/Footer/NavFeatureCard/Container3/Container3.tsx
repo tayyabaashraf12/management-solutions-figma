@@ -7,7 +7,7 @@ type Props = {};
 // Actions
 const Container3 = (props: Props) => {
   return (
-    <div className="w-[159px] h-[20px] flex gap-3 py-3">
+    <div className="w-[170px] h-[20px] flex gap-3 py-3">
       <Text />
       <Text1 />
     </div>

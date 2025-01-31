@@ -7,7 +7,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className="w-[280px] h-[452px] pt-[32px] flex flex-col gap-[24px] border border-red-800">
+    <div className="w-[280px] h-[452px] pt-[32px] flex flex-col gap-[24px] ">
       <Header />
       <Navigation />
       <Footer />
