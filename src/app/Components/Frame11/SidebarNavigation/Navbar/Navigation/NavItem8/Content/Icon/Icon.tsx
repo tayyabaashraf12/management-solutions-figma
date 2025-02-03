@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import NavigationLayersThree from "../../../../../../../../../SVG/Navigation-layers-three.svg";
+import NavigationLayersThree from "../../../../../../../../SVG/layers-three-1.svg";
 
 type Props = {};
 

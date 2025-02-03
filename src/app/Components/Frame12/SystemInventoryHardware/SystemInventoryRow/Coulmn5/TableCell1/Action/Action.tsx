@@ -6,7 +6,7 @@ type Props = {};
 
 const Action = (props: Props) => {
   return (
-    <div className="w-[10px] h-[10px] border border-blue-600 ">
+    <div className="w-[10px] h-[10px]  ">
       <Image
         src={ActionImage}
         alt="Action Dots"

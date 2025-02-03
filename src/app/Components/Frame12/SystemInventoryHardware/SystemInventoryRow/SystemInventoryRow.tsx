@@ -9,7 +9,7 @@ type Props = {};
 
 const SystemInventoryRow = (props: Props) => {
   return (
-    <div className="w-[920px] h-[188px] absolute flex  top-[167px] left-[28px] ">
+    <div className="w-[1098px] h-[188px] absolute flex  top-[167px] left-[40px] ">
       <Coulmn1 />
       <Coulmn2 />
       <Coulmn3 />

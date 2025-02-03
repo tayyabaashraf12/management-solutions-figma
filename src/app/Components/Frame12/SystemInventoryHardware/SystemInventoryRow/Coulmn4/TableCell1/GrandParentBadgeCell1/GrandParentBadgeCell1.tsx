@@ -5,7 +5,7 @@ type Props = {};
 
 const GrandParentBadgeCell1 = (props: Props) => {
   return (
-    <div className="w-[55px] h-[22px] flex gap-[11px]">
+    <div className="w-[55px] h-[22px]  gap-[11px]">
       <ParentBadgeCell1 />
     </div>
   );

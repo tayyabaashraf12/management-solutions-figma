@@ -28,15 +28,12 @@
 
 "use client";
 
-import NavigationButton from "./Components/NavigationButton/NavigationButton";
 import Frame1 from "./Components/Frame1/Frame1";
 
 const HomePage = () => {
   return (
     <>
       <Frame1 />
-      {/* Static slug provided for navigating to frame2 */}
-      <NavigationButton nextSlug="frame2" />
     </>
   );
 };

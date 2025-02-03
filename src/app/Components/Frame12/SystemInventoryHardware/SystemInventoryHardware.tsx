@@ -10,7 +10,7 @@ type Props = {};
 
 const SystemInventoryHardware = (props: Props) => {
   return (
-    <div className="w-[1178px] border-2 border-green-400 absolute h-[960px] top-[32px] left-[182px] rounded-[24px] bg-[#FFFFFF]">
+    <div className="w-[1178px]  absolute h-[960px] top-[32px] left-[182px] rounded-[24px] bg-[#FFFFFF]">
       <InventoryHeader />
       <HardwareText />
       <Search />

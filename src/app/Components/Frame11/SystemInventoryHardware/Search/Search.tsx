@@ -5,7 +5,7 @@ type Props = {};
 
 const Search = (props: Props) => {
   return (
-    <div className="w-[217.28px] h-[40px] absolute top-[86px] left-[28px] ">
+    <div className="w-[217.28px] h-[40px] absolute top-[86px] left-[30px] ">
       <SearchContainer />
     </div>
   );

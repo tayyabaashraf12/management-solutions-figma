@@ -20,6 +20,7 @@ export default {
       },
       opacity: {
         "58": "0.58",
+        value: "0.40",
       },
     },
   },

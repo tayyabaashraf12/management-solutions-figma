@@ -4,7 +4,7 @@ type Props = {};
 
 const Text = (props: Props) => {
   return (
-    <div className="w-[71px] border border-white  h-[24px] font-[Poppins] font-semibold text-[14px] leading-[24px]  text-[#263238] ">
+    <div className="w-[71px]   h-[24px] font-poppins font-semibold text-[14px] leading-[24px]  text-[#FFFFFF] ">
       Hardware
     </div>
   );

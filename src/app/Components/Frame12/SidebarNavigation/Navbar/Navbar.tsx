@@ -8,7 +8,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className="w-[81px] h-[260px] pt-[32px] flex  flex-col gap-[24px] border border-red-800">
+    <div className="w-[81px] h-[260px] pt-[32px] flex  flex-col gap-[24px] ">
       <Header />
       <OrderIcon />
       <BookIcon />

@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./Header/Header";
-import Navigation from "./Header/Navigation/Navigation";
+
 import Footer from "./Footer/Footer";
+import Navigation from "./Navigation/Navigation";
 
 type Props = {};
 

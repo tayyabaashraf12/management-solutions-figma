@@ -9,7 +9,7 @@ const Icon = (props: Props) => {
     <Image
       src={SearchIcon}
       alt="SearchIcon"
-      className="w-[20px] h-[20px] top-[10px] left-[11px]"
+      className="w-[20px] h-[20px]  relative top-[2px] left-[11px]"
     />
   );
 };

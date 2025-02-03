@@ -6,7 +6,7 @@ type Props = {};
 
 const TextAndIcon = (props: Props) => {
   return (
-    <div className="w-[216px] h-[20px] flex border gap-1">
+    <div className="w-[216px] h-[20px] flex  gap-1">
       <Text />
       <Icon />
     </div>

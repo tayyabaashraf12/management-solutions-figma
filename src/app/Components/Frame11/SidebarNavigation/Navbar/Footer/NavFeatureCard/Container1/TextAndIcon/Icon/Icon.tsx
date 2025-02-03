@@ -9,7 +9,7 @@ const Icon = (props: Props) => {
     <Image
       src={ButtonCloseIcon}
       alt="ButtonCloseIcon"
-      className="w-[37px] h-[20px] rounded-lg border-2 "
+      className="w-[37px] h-[23px] rounded-lg"
     />
   );
 };

@@ -6,7 +6,7 @@ type Props = {};
 
 const Frame = (props: Props) => {
   return (
-    <div className="w-[72px] h-[21px] flex gap-[16px] border border-red-500">
+    <div className="w-[72px] h-[21px] flex gap-[16px] ">
       <FilterText />
       <FilterIcon />
     </div>
