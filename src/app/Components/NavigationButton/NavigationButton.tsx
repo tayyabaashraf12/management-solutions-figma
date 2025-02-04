@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 import ArrowRight from "../../SVG/ArrowRight.svg";
-import BackArrow from "../../SVG/BackArrow1.svg";
+import BackArrow from "../../SVG/BackArrow-3.svg";
 
 interface NavigationButtonProps {
   nextSlug: string;

@@ -19,7 +19,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import FrameLogosContainer from "./FrameLogosContainer/FrameLogosContainer";
 import TextContainer from "./TextContainer/TextContainer";
-import Frame2 from "../Frame2/Frame2";
+import Frame2 from "../Frame2";
 
 const Frame1 = () => {
   const [showFrame2, setShowFrame2] = useState(false);

@@ -12,7 +12,7 @@ type Props = {};
 const Frame2 = (props: Props) => {
   return (
     <div className="w-[1440px] h-[1024px] top-[7062px] flex bg-[#071410] left-[7597px]">
-      <div>
+      <>
         <FrameLogosContainer />
         <Welcome />
         <BadgeGroup />
@@ -20,7 +20,7 @@ const Frame2 = (props: Props) => {
         <TextContainer />
         {/* Static slug provided for navigating to frame2 */}
         <NavigationButton nextSlug="frame3" backSlug="frame1" />
-      </div>
+      </>
       <ManagementSolutions />
     </div>
   );

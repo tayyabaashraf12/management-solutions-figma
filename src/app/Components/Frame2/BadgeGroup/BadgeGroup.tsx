@@ -41,7 +41,8 @@ const BadgeGroup = (props: Props) => {
       <input
         type="email"
         placeholder="ReeseTuttle@li.com"
-        className="font-roboto font-normal text-[14px] leading-[20px] bg-[#F9FAFB3B] text-[#D0D5DD]"
+        className="font-roboto font-normal text-[14px] leading-[20px]  text-[#D0D5DD]
+        outline-none border-none bg-transparent w-full"
         value={userEmail}
         onChange={(e) => setUserEmail(e.target.value)}
       />

@@ -28,7 +28,7 @@
 
 "use client";
 
-import Frame1 from "./Components/Frame1/Frame1";
+import Frame1 from "./Components/Frame1";
 
 const HomePage = () => {
   return (

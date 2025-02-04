@@ -66,19 +66,19 @@
 
 import React, { ReactNode } from "react";
 import { useParams } from "next/navigation";
-import Frame1 from "app/Components/Frame1/Frame1";
-import Frame2 from "app/Components/Frame2/Frame2";
-import Frame3 from "app/Components/Frame3/Frame3";
-import Frame4 from "app/Components/Frame4/Frame4";
+import Frame1 from "app/Components/Frame1";
+import Frame2 from "app/Components/Frame2";
+import Frame3 from "app/Components/Frame3";
+import Frame4 from "app/Components/Frame4";
 import NavigationButton from "app/Components/NavigationButton/NavigationButton";
-import Frame5 from "app/Components/Frame5/Frame5";
-import Frame6 from "app/Components/Frame6/Frame6";
-import Frame7 from "app/Components/Frame7/Frame7";
-import Frame8 from "app/Components/Frame8/Frame8";
-import Frame9 from "app/Components/Frame9/Frame9";
-import Frame10 from "app/Components/Frame10/Frame10";
-import Frame11 from "app/Components/Frame11/Frame11";
-import Frame12 from "app/Components/Frame12/Frame12";
+import Frame5 from "app/Components/Frame5";
+import Frame6 from "app/Components/Frame6";
+import Frame7 from "app/Components/Frame7";
+import Frame8 from "app/Components/Frame8";
+import Frame9 from "app/Components/Frame9";
+import Frame10 from "app/Components/Frame10";
+import Frame11 from "app/Components/Frame11";
+import Frame12 from "app/Components/Frame12";
 
 type FrameMappingType = Record<string, ReactNode>;
 
@@ -104,7 +104,8 @@ const ScreenPage = () => {
 
   const slug = Array.isArray(params.slug)
     ? params.slug[0]
-    : params.slug ?? "frame1";
+    : params.slug ?? "frame3";
+
   const currentIndex = orderedFrames.indexOf(slug);
 
   // Define forward navigation slug with Frame2 skipped
