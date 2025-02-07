@@ -36,6 +36,12 @@ const BadgeGroup = (props: Props) => {
   const [userEmail, setUserEmail] = useState("");
   const router = useRouter(); // Get router instance from the component
 
+  const handleClick = () => {
+    if (userEmail) {
+      handleAuthentication(userEmail, router);
+    }
+  };
+
   return (
     <div className="w-[305px] h-[42px] absolute top-[212px] left-[80px] rounded-[28px] flex justify-between items-center pt-[4px] pr-[4px] pb-[4px] pl-[20px] bg-[#F9FAFB3B]">
       <input
@@ -46,7 +52,7 @@ const BadgeGroup = (props: Props) => {
         value={userEmail}
         onChange={(e) => setUserEmail(e.target.value)}
       />
-      <Badge onClick={() => handleAuthentication(userEmail, router)} />
+      <Badge onClick={handleClick} />
     </div>
   );
 };

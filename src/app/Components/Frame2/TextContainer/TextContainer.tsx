@@ -6,7 +6,7 @@ type Props = {};
 
 const TextContainer = (props: Props) => {
   return (
-    <div className="w-[415px] h-[14px] top-[950px]  left-[30px] relative flex justify-center gap-1   ">
+    <div className="w-[415px] h-[14px] top-[950px]  left-[10px] relative flex justify-center gap-1   ">
       <Text1 />
       <Text2 />
     </div>

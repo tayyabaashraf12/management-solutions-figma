@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image"; // Import the next/image component
+import Image from "next/image";
 import Frame1Rectangles from "app/SVG/Frame1Rectangles.svg";
 import Frame1NoiseTexture from "app/SVG/Frame1 Noise & Texture.svg";
 
@@ -9,7 +9,7 @@ const FrameLogosContainer = (props: Props) => {
   return (
     <div className="w-[65.59px] h-[70px] absolute flex gap-5 top-[461px] left-[687px]">
       <Image
-        className=" w-[65.59px] h-[70px] border "
+        className=" w-[65.59px] h-[70px]  "
         src={Frame1Rectangles}
         alt="Sidebar1Rectangles"
       />
