@@ -16,6 +16,7 @@ const SystemInventoryHardware = (props: Props) => {
       <Search />
       <FilterNew />
       <SystemInventoryRow />
+
       <PaginationGroup />
     </div>
   );
