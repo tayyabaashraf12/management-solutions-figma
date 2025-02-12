@@ -1,16 +1,26 @@
 import contractInstance from "./VoteContractHelper";
 
-export const getUserBalance = async (userAddress: string) => {
+export const getUserBalance = async (
+  userAddress: string
+): Promise<string | null> => {
   try {
-    const balance = await contractInstance.methods
+    const balance: unknown = await contractInstance.methods
       .balanceOf(userAddress)
       .call();
-    console.log("User Balance:", balance);
-    return balance;
+
+    if (typeof balance === "bigint" || balance instanceof BigInt) {
+      return balance.toString(); // Convert BigInt to string
+    }
+
+    console.warn("Unexpected balance type:", balance);
+    return null;
   } catch (error) {
     console.error("Error fetching user balance:", error);
+    return null;
   }
 };
+
+/**User Balance represents the  Token Balance */
 
 /**we have created getUserBalance arrow function in which we have called balanceOf method
  * of VoteContract ,and that method is present in Contract ABI (Application Binary Interface),

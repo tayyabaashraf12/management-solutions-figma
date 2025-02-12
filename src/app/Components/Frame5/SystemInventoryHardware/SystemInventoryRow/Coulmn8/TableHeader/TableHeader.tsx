@@ -7,7 +7,7 @@ type Props = {};
 
 const TableHeader = (props: Props) => {
   return (
-    <div className="w-[273px] h-[50px] border rounded-tl-[12px] border-[#EAECF0] px-[24px] py-[12px] flex gap-[12px bg-[#F9FAFB]">
+    <div className="w-[164px] h-[44px] border border-t-[1px] border-r-[1px] border-b-[1px] border-[#EAECF0] px-[24px] py-[12px] flex items-center gap-[12px] bg-[#F9FAFB]">
       <TextAndSupportingText />
     </div>
   );
