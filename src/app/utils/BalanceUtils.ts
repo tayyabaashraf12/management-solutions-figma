@@ -1,18 +1,18 @@
 import contractInstance from "./VoteContractHelper";
 
 export const getUserBalance = async (
-  userAddress: string
+  connectedUserAccount: string
 ): Promise<string | null> => {
   try {
-    const balance: unknown = await contractInstance.methods
-      .balanceOf(userAddress)
+    const tokenBalance: unknown = await contractInstance.methods
+      .balanceOf(connectedUserAccount)
       .call();
 
-    if (typeof balance === "bigint" || balance instanceof BigInt) {
-      return balance.toString(); // Convert BigInt to string
+    if (typeof tokenBalance === "bigint" || tokenBalance instanceof BigInt) {
+      return tokenBalance.toString(); // Convert BigInt to string
     }
 
-    console.warn("Unexpected balance type:", balance);
+    console.warn("Unexpected balance type:", tokenBalance);
     return null;
   } catch (error) {
     console.error("Error fetching user balance:", error);

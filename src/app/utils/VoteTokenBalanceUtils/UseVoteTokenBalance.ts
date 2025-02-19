@@ -7,6 +7,8 @@ const useVoteTokenBalance = () => {
 
   const fetchVoteTokenBalance = async () => {
     const userAddress = await connectWallet();
+    console.log("Connected Wallet Address:", userAddress); // Debugging
+
     if (userAddress) {
       const fetchedBalance = await getVoteTokenBalance(userAddress);
       console.log("Fetched Balance", fetchedBalance);

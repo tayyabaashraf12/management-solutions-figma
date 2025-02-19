@@ -1,11 +1,7 @@
+import Web3 from "web3";
 import VoteABI from "./VoteContractABI.json";
-import web3 from "./Web3Helper";
 
-if (!web3) {
-  throw new Error(
-    "Web3 is not initialized. Please check your Web3 connection."
-  );
-}
+const web3 = new Web3(window.ethereum);
 const voteContractAddress = "0x98b7c1f8B041994aFFD919006F1009e660f5449a";
 const voteContractInstance = new web3.eth.Contract(
   VoteABI,

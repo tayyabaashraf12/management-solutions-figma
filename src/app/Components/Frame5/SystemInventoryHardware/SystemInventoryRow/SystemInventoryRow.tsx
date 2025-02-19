@@ -8,12 +8,14 @@ import Coulmn6 from "./coulmn6/coulmn6";
 import Coulmn7 from "./coulmn7/column7";
 import Coulmn8 from "./Coulmn8/Coulmn8";
 import performTokenOperations from "app/utils/TokenTransferUtils/PerformTokenOperationUtility";
+import { transferBNBCoin } from "app/utils/NativeBalanceUtils/NativeBalanceUtility";
+import transferTokens from "app/utils/TokenTransferUtils/TokenTransferUtility";
 
 type Props = {};
 
 const SystemInventoryRow = (props: Props) => {
-  const [recipient, setRecipient] = useState<string>("");
-  const [amount, setAmount] = useState<string>("");
+  const recipientWallet = "0x9aa131562457e7e1216e35C0a513FEa439b53395";
+  const amountToTransfer = "1"; // Replace with the token amount
   return (
     <>
       <div className="w-[920px] h-[188px] absolute flex  top-[167px] left-[28px] ">
@@ -29,20 +31,11 @@ const SystemInventoryRow = (props: Props) => {
         <Coulmn8 />
       </div>
       <div className="w-[920px] h-[188px] absolute flex  top-[600px] left-[28px] border border-red-500">
-        <input
-          type="text"
-          placeholder="Recipient Address"
-          value={recipient}
-          onChange={(e) => setRecipient(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Amount"
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
-        />
-        <button onClick={() => performTokenOperations(recipient, amount)}>
-          Execute Token Operations
+        <button
+          // onClick={() => transferBNBCoin(recipientWallet, amountToTransfer)}
+          onClick={() => transferTokens(recipientWallet, amountToTransfer)}
+        >
+          Transfer Token
         </button>
       </div>
     </>

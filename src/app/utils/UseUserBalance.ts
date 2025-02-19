@@ -4,18 +4,21 @@ import { getUserBalance } from "./BalanceUtils";
 import { connectWallet } from "./WalletUtilty";
 
 const useUserBalance = () => {
-  const [balance, setBalance] = useState<string | null>(null);
+  const [tokenBalance, setBalance] = useState<string | null>(null);
 
   const fetchBalance = async () => {
-    const userAddress = await connectWallet();
-    if (!userAddress) return;
+    /**connectedUserAccount is actually the wallet address of connected user in metamask */
+    const connectedUserAccount = await connectWallet();
+    if (!connectedUserAccount) return;
 
     try {
-      const fetchedBalance = await getUserBalance(userAddress);
-      console.log("Fetched Balance:", fetchedBalance);
+      const fetchedVoteTokenBalance = await getUserBalance(
+        connectedUserAccount
+      );
+      console.log("fetched Vote Token Balance:", fetchedVoteTokenBalance);
 
-      fetchedBalance
-        ? setBalance(fetchedBalance)
+      fetchedVoteTokenBalance
+        ? setBalance(fetchedVoteTokenBalance)
         : alert("Failed to fetch balance.");
     } catch (error) {
       console.error("Error fetching balance:", error);
@@ -26,10 +29,10 @@ const useUserBalance = () => {
     fetchBalance();
   }, []);
 
-  return balance;
+  return tokenBalance;
 };
 
 export default useUserBalance;
-/**useUserBalance is a custom hook in which I implemented User Data fetching functionality from Vote Contract
+/**useUserBalance is a custom hook in which I implemented User Vote Token Balance fetching functionality from Vote Contract
  * which is deployed on BSC Testnet
  */
