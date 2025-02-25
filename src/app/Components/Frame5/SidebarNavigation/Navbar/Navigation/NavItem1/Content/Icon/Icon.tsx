@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import NavbarHomeIcon from "../../../../../../../../../SVG/home-line.svg";
+import NavbarHomeIcon from "../../../../../../../../SVG/home-line.svg";
 
 const Icon = () => {
   return (
