@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import BarchartSquareIcon from "../../../../../../../../../SVG/BarChartSquare.svg";
+import BarchartSquareIcon from "../../../../../../../../SVG/BarChartSquare.svg";
 
 const Icon = () => {
   return (
