@@ -1,7 +1,7 @@
 import { useState } from "react";
 import sendBUSD from "app/utils/busdTokenTransferUtils/TokenTransferUtility";
 
-const useWalletFormHelper = () => {
+const useWalletFormService = () => {
   // State to store recipient's address and token amount
   const [recipientAddress, setRecipientAddress] = useState("");
   const [tokenAmount, setTokenAmount] = useState("");
@@ -40,4 +40,4 @@ const useWalletFormHelper = () => {
   };
 };
 
-export default useWalletFormHelper;
+export default useWalletFormService;

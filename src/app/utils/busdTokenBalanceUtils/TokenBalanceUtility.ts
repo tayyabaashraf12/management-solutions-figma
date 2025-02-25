@@ -19,15 +19,3 @@ export const getBUSDTokenBalance = async (
     return null;
   }
 };
-
-/**One point of difference need to remember */
-
-/**--------------------------------------------------------------- */
-/**1. User Balance Fetching Functionality
-User balance is the total Balance of native cryptocurrency (BNB, ETH, etc.) that user holds(ownes) in its  MetaMask wallet.
-This typically uses method like web3.eth.getBalance(accountAddress) for fetching the total  balance. */
-
-/**--------------------------------------------------------------- */
-/**Vote Token Balance Fetching Functionality
-Vote Token Balance is the balance of the Vote token within the deployed Vote contract.
-This uses the balanceOf(address) method of the Vote contract, where the smart contract itself maintains the user's token balance.*/

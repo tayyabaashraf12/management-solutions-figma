@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Socialicon from "../../../SVG/Social icon.svg";
+import Socialicon from "../../../../SVG/Social icon.svg";
 
 type Props = {};
 

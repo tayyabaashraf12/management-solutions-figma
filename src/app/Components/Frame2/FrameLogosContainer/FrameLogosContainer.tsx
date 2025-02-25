@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image"; // Import the next/image component
+import Image from "next/image";
 import Frame1Rectangles from "app/SVG/Frame1Rectangles.svg";
-import Frame1NoiseTexture from "app/SVG/Frame1 Noise & Texture.svg";
-
 type Props = {};
 
 const FrameLogosContainer = (props: Props) => {

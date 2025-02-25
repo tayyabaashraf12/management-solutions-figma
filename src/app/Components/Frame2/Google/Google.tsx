@@ -1,6 +1,6 @@
 import React from "react";
 import GoogleSignInText from "./GoogleSignInText/GoogleSignInText";
-import SocialIcon from "../SocialIcon/SocialIcon";
+import SocialIcon from "./SocialIcon/SocialIcon";
 
 type Props = {};
 

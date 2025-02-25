@@ -18,7 +18,6 @@ const Frame2 = (props: Props) => {
         <BadgeGroup />
         <Google />
         <TextContainer />
-        {/* Static slug provided for navigating to frame2 */}
         <NavigationButton nextSlug="frame3" backSlug="frame1" />
       </>
       <ManagementSolutions />

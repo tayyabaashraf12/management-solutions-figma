@@ -1,12 +1,6 @@
 import React from "react";
-import NavItem1 from "./NavItem1/NavItem1";
-import NavItem2 from "./NavItem2/NavItem2";
+
 import NavItem3 from "./NavItem3/NavItem3";
-import NavItem4 from "./NavItem4/NavItem4";
-import NavItem5 from "./NavItem5/NavItem5";
-import NavItem6 from "./NavItem6/NavItem6";
-import NavItem7 from "./NavItem7/NavItem7";
-import NavItem8 from "./NavItem8/NavItem8";
 
 type Props = {};
 
