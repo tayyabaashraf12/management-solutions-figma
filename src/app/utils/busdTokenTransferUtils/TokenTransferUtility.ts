@@ -1,6 +1,6 @@
 import Web3 from "web3";
-import connectWallet from "../WalletUtilty";
 import busdContractInstance from "../busdContractHelper";
+import connectWallet from "../connectWallet/connectWallet";
 
 const sendBUSD = async (recipientWalletAddress: string, amount: any) => {
   const senderWalletAddress = await connectWallet();
@@ -18,6 +18,8 @@ const sendBUSD = async (recipientWalletAddress: string, amount: any) => {
       });
 
     console.log("Transaction Successful:", tx);
+    /* Return transaction hash*/
+    return tx.transactionHash;
   } catch (error) {
     console.error("Transaction Failed:", error);
   }

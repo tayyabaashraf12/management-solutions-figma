@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { connectWallet } from "../WalletUtilty";
+import connectWallet from "../WalletUtilty";
 import { getVoteTokenBalance } from "./TokenBalanceUtility";
 
 const useVoteTokenBalance = () => {
