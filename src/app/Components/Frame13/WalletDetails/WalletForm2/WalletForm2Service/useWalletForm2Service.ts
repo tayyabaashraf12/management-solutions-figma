@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 type Props = {};
-const API_KEY = "77JTWG6WD5YK83UPV7Z6DYT3RXRGK14K7N"; //  BscScan API key
+const API_KEY = process.env.NEXT_API_KEY; //  BscScan API key
 
 const useWalletForm2Helper = () => {
   const [walletAddress, setWalletAddress] = useState("");

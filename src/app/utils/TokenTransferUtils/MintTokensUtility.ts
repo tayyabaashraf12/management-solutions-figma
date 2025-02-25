@@ -1,7 +1,5 @@
 import voteContractInstance from "../VoteContractHelper";
-import { getVoteTokenBalance } from "../VoteTokenBalanceUtils/TokenBalanceUtility";
-import useVoteTokenBalance from "../VoteTokenBalanceUtils/UseVoteTokenBalance";
-import { connectWallet } from "../WalletUtilty";
+import connectWallet from "../WalletUtilty";
 
 const mintTokens = async () => {
   try {

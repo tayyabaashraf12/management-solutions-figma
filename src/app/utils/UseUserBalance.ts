@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getUserBalance } from "./BalanceUtils";
-import { connectWallet } from "./WalletUtilty";
+import connectWallet from "./WalletUtilty";
 
 const useUserBalance = () => {
   const [tokenBalance, setBalance] = useState<string | null>(null);
