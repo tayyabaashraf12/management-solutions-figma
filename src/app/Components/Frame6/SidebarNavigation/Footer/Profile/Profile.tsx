@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import FooterProfileImage from "../../../../../SVG/Profile.svg";
 
-type Props = {};
-
-const Profile = (props: Props) => {
+const Profile = () => {
   return (
     <Image
       src={FooterProfileImage}

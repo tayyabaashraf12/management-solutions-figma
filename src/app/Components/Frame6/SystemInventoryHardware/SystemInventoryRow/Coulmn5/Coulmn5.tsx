@@ -4,9 +4,7 @@ import TableHeader from "./TableHeader/TableHeader";
 import TableCell1 from "./TableCell1/TableCell1";
 import TableCell2 from "./TableCell2/TableCell2";
 
-type Props = {};
-
-const Coulmn5 = (props: Props) => {
+const Coulmn5 = () => {
   return (
     <div className="w-[163px] h-[188px] top-[167px] left-[975px] ">
       <TableHeader />

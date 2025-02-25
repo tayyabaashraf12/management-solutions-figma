@@ -2,9 +2,7 @@ import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
 
-type Props = {};
-
-const SidebarNavigation = (props: Props) => {
+const SidebarNavigation = () => {
   return (
     <div className="w-[82px] h-[960px] flex flex-col justify-between absolute top-[32px] left-[80px] rounded-[24px] bg-[#59BF78]">
       <Navbar />

@@ -8,9 +8,7 @@ import NavItem6 from "./NavItem6/NavItem6";
 import NavItem7 from "./NavItem7/NavItem7";
 import NavItem8 from "./NavItem8/NavItem8";
 
-type Props = {};
-
-const Navigation = (props: Props) => {
+const Navigation = () => {
   return (
     <div className="w-[280px] h-[348px] px-[16px] flex flex-col gap-[4px]  ">
       <NavItem1 />

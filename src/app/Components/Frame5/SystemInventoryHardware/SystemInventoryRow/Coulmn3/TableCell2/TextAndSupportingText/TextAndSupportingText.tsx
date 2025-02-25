@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const TextAndSupportingText = (props: Props) => {
+const TextAndSupportingText = () => {
   return (
     <div className="w-[72px] h-[18px] flex items-center">
       <p className="font-[Poppins] font-medium text-[12px] leading-[18px] text-[#475467]">

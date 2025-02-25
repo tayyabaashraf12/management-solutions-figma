@@ -4,7 +4,7 @@ import Icon from "./Icon/Icon";
 
 type Props = {};
 
-const TextAndIcon = (props: Props) => {
+const TextAndIcon = () => {
   return (
     <div className="w-[216px] h-[20px] flex  gap-1">
       <Text />

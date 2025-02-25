@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const Text = (props: Props) => {
+const Text = () => {
   return (
     <div
       className="w-[86px] h-[24px] top-[8px] left-[40px]

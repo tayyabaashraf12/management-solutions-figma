@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import PlayButtonIcon from "../../../../../../../../SVG/PlayButton.svg";
 
-type Props = {};
-
-const PlayButton = (props: Props) => {
+const PlayButton = () => {
   return (
     <Image
       src={PlayButtonIcon}

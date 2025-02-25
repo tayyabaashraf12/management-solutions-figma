@@ -6,9 +6,7 @@ import ManagementSolutions from "./ManagementSolutions/ManagementSolutions";
 import FrameLogosContainer from "./FrameLogosContainer/FrameLogosContainer";
 import TextContainer from "./TextContainer/TextContainer";
 
-type Props = {};
-
-const Frame8 = (props: Props) => {
+const Frame8 = () => {
   return (
     <div className="w-[1440px] h-[1024px] flex top-[8344px] left-[7597px] bg-[#A21A36]">
       <div>

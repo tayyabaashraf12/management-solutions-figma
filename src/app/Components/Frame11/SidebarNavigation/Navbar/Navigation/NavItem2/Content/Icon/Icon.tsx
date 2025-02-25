@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import BarchartSquareIcon from "../../../../../../../../SVG/barchart-square2.svg";
 
-type Props = {};
-
-const Icon = (props: Props) => {
+const Icon = () => {
   return (
     <Image
       src={BarchartSquareIcon}

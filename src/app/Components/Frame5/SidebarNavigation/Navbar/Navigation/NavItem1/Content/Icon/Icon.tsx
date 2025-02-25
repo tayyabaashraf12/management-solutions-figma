@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import NavbarHomeIcon from "../../../../../../../../../SVG/home-line.svg";
 
-type Props = {};
-
-const Icon = (props: Props) => {
+const Icon = () => {
   return (
     <Image
       src={NavbarHomeIcon}

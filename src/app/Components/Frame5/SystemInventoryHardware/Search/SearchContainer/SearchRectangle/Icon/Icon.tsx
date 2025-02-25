@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import SearchIcon from "../../../../../../../SVG/Search.svg";
 
-type Props = {};
-
-const Icon = (props: Props) => {
+const Icon = () => {
   return (
     <Image
       src={SearchIcon}

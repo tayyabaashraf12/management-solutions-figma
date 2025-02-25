@@ -1,9 +1,7 @@
 import React from "react";
 import ButtonComponent from "./ButtonComponent/ButtonComponent";
 
-type Props = {};
-
-const NavItem3 = (props: Props) => {
+const NavItem3 = () => {
   return <ButtonComponent />;
 };
 

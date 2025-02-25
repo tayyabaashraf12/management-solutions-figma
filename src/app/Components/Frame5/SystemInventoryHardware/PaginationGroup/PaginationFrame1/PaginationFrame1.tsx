@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const PaginationFrame1 = (props: Props) => {
+const PaginationFrame1 = () => {
   return (
     <div className="w-[85px] h-[24px]  top-[900px] left-[663px] flex my-auto gap-[17px]">
       <div

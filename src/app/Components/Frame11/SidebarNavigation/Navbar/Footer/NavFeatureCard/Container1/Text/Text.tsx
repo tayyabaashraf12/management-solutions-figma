@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const Text = (props: Props) => {
+const Text = () => {
   return (
     <div className="w-[216px]   h-[40px] font-[Poppins] font-normal text-[14px] leading-[20px]  text-[#E9D7FE] ">
       Check out the new dashboard view. Pages now load faster.{" "}

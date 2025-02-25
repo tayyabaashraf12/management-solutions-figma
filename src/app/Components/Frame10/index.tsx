@@ -5,9 +5,7 @@ import OrganizationText from "./OrganizationText/OrganizationText";
 import SelectOrganization from "./SelectOrganization/SelectOrganization";
 import Kryptomind1 from "./Kryptomind1/Kryptomind1";
 
-type Props = {};
-
-const Frame10 = (props: Props) => {
+const Frame10 = () => {
   return (
     <div className="w-[1440px]  h-[1024px]  top-[8344px] left-[10789px] bg-[#A21A36] ">
       <Rectangles />

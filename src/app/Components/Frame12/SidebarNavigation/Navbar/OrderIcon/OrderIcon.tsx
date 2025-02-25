@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import NavbarOrderIcon from "../../../../../SVG/OrderIcon2.svg";
 
-type Props = {};
-
-const OrderIcon = (props: Props) => {
+const OrderIcon = () => {
   return (
     <Image
       src={NavbarOrderIcon}

@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import LogOutIcon from "../../../../../../../../SVG/LogoutButton.svg";
-type Props = {};
 
-const LogoutButton = (props: Props) => {
+const LogoutButton = () => {
   return (
     <Image
       src={LogOutIcon}

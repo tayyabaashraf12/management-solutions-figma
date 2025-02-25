@@ -3,9 +3,7 @@ import React from "react";
 import Text2 from "./Text2/Text2";
 import Text1 from "./Text1/Text1";
 
-type Props = {};
-
-const Text = (props: Props) => {
+const Text = () => {
   return (
     <div className="w-[137px]  h-[40px]  ">
       <Text1 />

@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import FilterTuneIcon from "../../../../../../../SVG/FiltorIcon.svg";
 
-type Props = {};
-
-const FilterIcon = (props: Props) => {
+const FilterIcon = () => {
   return (
     <Image
       src={FilterTuneIcon}

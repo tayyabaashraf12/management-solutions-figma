@@ -1,9 +1,7 @@
 import React from "react";
 import Badge from "./Badge/Badge";
 
-type Props = {};
-
-const ParentBadgeCell1 = (props: Props) => {
+const ParentBadgeCell1 = () => {
   return (
     <div className="w-[55px] h-[22px]  gap-[10px]">
       <Badge />

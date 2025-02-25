@@ -4,9 +4,7 @@ import Page2 from "./Page2/Page2";
 import Page3 from "./Page3/Page3";
 import Page4 from "./Page4/Page4";
 
-type Props = {};
-
-const PaginationFrame2 = (props: Props) => {
+const PaginationFrame2 = () => {
   return (
     <div className="w-[182px] h-[38px] top-[893px] left-[766px] flex gap-[10px] ">
       <Page1 />

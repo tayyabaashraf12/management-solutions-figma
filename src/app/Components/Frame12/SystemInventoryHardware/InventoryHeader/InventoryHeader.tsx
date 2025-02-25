@@ -2,11 +2,8 @@ import React from "react";
 import CheckDoneIcon from "./CheckDoneIcon/CheckDoneIcon";
 import NewText from "./InventoryHeaderText/NewText";
 import RightIcon from "./RightIcon/RightIcon";
-import NewText1 from "../HardwareText";
 
-type Props = {};
-
-const InventoryHeader = (props: Props) => {
+const InventoryHeader = () => {
   return (
     <div
       className="flex w-[248px] absolute
@@ -15,7 +12,6 @@ const InventoryHeader = (props: Props) => {
       <CheckDoneIcon />
       <NewText />
       <RightIcon />
-      {/* <NewText1 /> */}
     </div>
   );
 };

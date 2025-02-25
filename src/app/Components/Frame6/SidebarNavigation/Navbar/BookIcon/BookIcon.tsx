@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import BookIcon2 from "../../../../../SVG/BookIcon2.svg";
 
-type Props = {};
-
-const BookIcon = (props: Props) => {
+const BookIcon = () => {
   return (
     <Image
       src={BookIcon2}

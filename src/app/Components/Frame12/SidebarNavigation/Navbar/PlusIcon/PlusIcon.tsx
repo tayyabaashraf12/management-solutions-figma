@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import PlusIcon2 from "../../../../../SVG/PlusIcon.svg";
 
-type Props = {};
-
-const PlusIcon = (props: Props) => {
+const PlusIcon = () => {
   return (
     <Image
       src={PlusIcon2}

@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const ManagementContainerText1 = (props: Props) => {
+const ManagementContainerText1 = () => {
   return (
     <div
       className="w-[557px] h-[100px]   relative top-[10px] left-[30px]

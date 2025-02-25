@@ -2,9 +2,7 @@ import React from "react";
 import Icon from "./Icon/Icon";
 import Text from "./Text/Text";
 
-type Props = {};
-
-const Content = (props: Props) => {
+const Content = () => {
   return (
     <div className="w-[224px] h-[24px] flex  gap-[12px]">
       <Icon />

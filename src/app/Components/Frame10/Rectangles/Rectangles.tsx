@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import RectanglesLogo from "../../../SVG/Frame1Rectangles.svg";
 
-type Props = {};
-
-const Rectangles = (props: Props) => {
+const Rectangles = () => {
   return (
     <Image
       src={RectanglesLogo}

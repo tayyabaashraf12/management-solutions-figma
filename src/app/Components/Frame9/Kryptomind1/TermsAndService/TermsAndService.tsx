@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const TermsAndService = (props: Props) => {
+const TermsAndService = () => {
   return (
     <div
       className="w-[230px] h-[13px]  top-[972px] left-[1197px] capitalize

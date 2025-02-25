@@ -1,9 +1,7 @@
 import React from "react";
 import Content from "./Content/Content";
 
-type Props = {};
-
-const NavItem7 = (props: Props) => {
+const NavItem7 = () => {
   return (
     <div className="w-[248px]  h-[40px] rounded-[6px] py-[8px] px-[12px] gap-[8px]">
       <Content />

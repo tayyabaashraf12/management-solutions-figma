@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const NewText = (props: Props) => {
+const NewText = () => {
   return (
     <div
       className="w-[130px] h-[24px]  text-[#263238] font-poppins font-semibold text-[14px]

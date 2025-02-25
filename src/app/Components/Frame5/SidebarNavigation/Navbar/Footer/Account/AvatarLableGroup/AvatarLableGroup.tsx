@@ -2,9 +2,7 @@ import React from "react";
 import Icon from "./Icon/Icon";
 import Text from "./Text/Text";
 
-type Props = {};
-
-const AvatarLableGroup = (props: Props) => {
+const AvatarLableGroup = () => {
   return (
     <div className="w-[208px] h-[40px] flex gap-[12px]">
       <Icon />
