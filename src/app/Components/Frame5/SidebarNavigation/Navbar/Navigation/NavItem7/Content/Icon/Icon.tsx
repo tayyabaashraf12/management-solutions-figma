@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import CheckDoneIconNavigation from "../../../../../../../../../SVG/CheckDoneIconNavigation.svg";
+import CheckDoneIconNavigation from "../../../../../../../../SVG/CheckDoneIconNavigation.svg";
 
 const Icon = () => {
   return (
