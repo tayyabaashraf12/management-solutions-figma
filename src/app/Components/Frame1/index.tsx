@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import FrameLogosContainer from "./FrameLogosContainer/FrameLogosContainer";
 import TextContainer from "./TextContainer/TextContainer";
 import Frame2 from "../Frame2";
+import styles from "./Frame1.module.css"; // Import CSS module
 
 const Frame1 = () => {
   const [showFrame2, setShowFrame2] = useState(false);
+  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowFrame2(true);
-    }, 1000); // 1000ms delay before navigation to Frame2
+      setFadeOut(true); // Start fade-out animation
+      setTimeout(() => {
+        setShowFrame2(true); // After animation, switch component
+      }, 300); // Ensure this matches the fade-out duration
+    }, 1000); // Delay before transition
 
     return () => clearTimeout(timer);
   }, []);
@@ -18,23 +22,14 @@ const Frame1 = () => {
   return (
     <>
       {!showFrame2 ? (
-        <motion.div
-          className="w-[1440px] h-[1024px] bg-[#071410]"
-          initial={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100 }}
-          transition={{ ease: "easeOut", duration: 0.3 }}
-        >
+        <div className={`${styles.frame} ${fadeOut ? styles.fadeOut : ""}`}>
           <FrameLogosContainer />
           <TextContainer />
-        </motion.div>
+        </div>
       ) : (
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ ease: "easeOut", duration: 0.3 }}
-        >
+        <div className={styles.fadeIn}>
           <Frame2 />
-        </motion.div>
+        </div>
       )}
     </>
   );
