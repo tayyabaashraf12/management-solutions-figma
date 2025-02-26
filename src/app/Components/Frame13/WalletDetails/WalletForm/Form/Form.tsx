@@ -19,7 +19,7 @@ const Form: React.FC<Props> = ({ Balance }) => {
   return (
     <>
       <form className="my-4" onSubmit={handleSendTokens}>
-        Wallet Balance Input
+        {/* Wallet Balance Input */}
         <div>
           <label className="block text-sm font-roboto font-extrabold text-gray-600">
             Connected Account Wallet Balance
@@ -68,21 +68,26 @@ const Form: React.FC<Props> = ({ Balance }) => {
         </div>
       </form>
       <div className="mt-4 text-center">
-        <Link
-          href={
-            transactionHash
-              ? `https://testnet.bscscan.com/tx/${transactionHash}`
-              : "#"
-          }
-          target="_blank"
+        <button
+          disabled={!transactionHash}
           className={`inline-block px-4 py-2 rounded-md text-white font-bold transition ${
             transactionHash
-              ? "bg-blue-500 hover:bg-blue-700 cursor-pointer"
+              ? "bg-blue-500 hover:bg-blue-700 "
               : "bg-gray-400 cursor-not-allowed"
           }`}
         >
-          View Transaction
-        </Link>
+          <Link
+            href={
+              transactionHash
+                ? `https://testnet.bscscan.com/tx/${transactionHash}`
+                : "#"
+            }
+            target="_blank"
+            className="block w-full h-full"
+          >
+            View Transaction
+          </Link>
+        </button>
       </div>
     </>
   );

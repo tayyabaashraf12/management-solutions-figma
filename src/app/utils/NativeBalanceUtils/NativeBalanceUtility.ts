@@ -1,5 +1,5 @@
 import Web3 from "web3";
-import connectWallet from "../WalletUtilty";
+import connectWalletAndFetchBalance from "../connectWalletAndFetchBalanceUtility";
 
 export const transferBNBCoin = async (
   recipientWalletAddress: string,
@@ -9,7 +9,7 @@ export const transferBNBCoin = async (
     /** web3 instance intialization*/
     const web3 = new Web3(window.ethereum);
 
-    const senderWalletAddress = await connectWallet();
+    const senderWalletAddress = await connectWalletAndFetchBalance();
 
     /**null senderWalletAddress check */
     if (!senderWalletAddress) {

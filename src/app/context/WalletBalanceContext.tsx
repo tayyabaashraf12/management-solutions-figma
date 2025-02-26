@@ -1,9 +1,9 @@
 "use client";
+import connectWalletAndFetchBalance from "app/utils/connectWalletAndFetchBalanceUtility";
 import React, { createContext, useContext, useState } from "react";
-import connectWallet from "app/utils/WalletUtilty";
 
 interface WalletBalanceContextProps {
-  walletTokenBalance: string | null;
+  UserWalletBalance: string | null;
   handleConnectWallet: () => void;
 }
 
@@ -14,20 +14,20 @@ const WalletBalanceContext = createContext<
 export const WalletBalanceProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [walletTokenBalance, setWalletTokenBalance] = useState<string | null>(
+  const [UserWalletBalance, setUserWalletBalance] = useState<string | null>(
     null
   );
 
   const handleConnectWallet = async () => {
-    const tokenBalance = await connectWallet();
-    if (tokenBalance) {
-      setWalletTokenBalance(tokenBalance);
+    const userBalance = await connectWalletAndFetchBalance();
+    if (userBalance) {
+      setUserWalletBalance(userBalance);
     }
   };
 
   return (
     <WalletBalanceContext.Provider
-      value={{ walletTokenBalance, handleConnectWallet }}
+      value={{ UserWalletBalance, handleConnectWallet }}
     >
       {children}
     </WalletBalanceContext.Provider>

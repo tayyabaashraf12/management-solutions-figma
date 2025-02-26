@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { getUserBalance } from "./BalanceUtils";
-import connectWallet from "./WalletUtilty";
+import connectWalletAndFetchBalance from "./connectWalletAndFetchBalanceUtility";
 
 const useUserBalance = () => {
   const [tokenBalance, setBalance] = useState<string | null>(null);
 
   const fetchBalance = async () => {
     /**connectedUserAccount is actually the wallet address of connected user in metamask */
-    const connectedUserAccount = await connectWallet();
+    const connectedUserAccount = await connectWalletAndFetchBalance();
     if (!connectedUserAccount) return;
 
     try {
