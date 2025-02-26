@@ -1,4 +1,3 @@
-import web3 from "app/utils/Web3Helper";
 import { getUserBalance } from "app/utils/BalanceUtils";
 import { NextRouter } from "next/router";
 
