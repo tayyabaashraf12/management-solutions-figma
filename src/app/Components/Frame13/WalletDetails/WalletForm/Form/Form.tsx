@@ -1,6 +1,5 @@
 import React from "react";
 import useWalletFormService from "../WalletFormService/useWalletFormService";
-import Link from "next/link";
 
 type Props = {
   Balance: string | null;
