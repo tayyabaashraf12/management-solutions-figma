@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const Text1 = (props: Props) => {
+const Text1 = () => {
   return (
     <div
       className="

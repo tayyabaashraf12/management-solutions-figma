@@ -34,11 +34,11 @@ const Form: React.FC<Props> = ({ Balance }) => {
         {/* Recipient Address Input */}
         <div className="my-2">
           <label className="block text-sm font-roboto font-extrabold text-gray-600">
-            Tokens Recipient's Address
+            Tokens Address of receipent
           </label>
           <input
             type="text"
-            placeholder="Please enter recipient's address"
+            placeholder="Please enter address of recipient"
             className="w-full px-4 py-2 border border-gray-300 rounded-md bg-gray-100 text-gray-700"
             value={recipientAddress}
             onChange={(e) => setRecipientAddress(e.target.value)}

@@ -2,9 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Frame1Rectangles from "app/SVG/Frame1Rectangles.svg";
 
-type Props = {};
-
-const FrameLogosContainer = (props: Props) => {
+const FrameLogosContainer = () => {
   return (
     <div className="w-[65.59px] h-[70px] absolute flex gap-5 top-[461px] left-[687px]">
       <Image

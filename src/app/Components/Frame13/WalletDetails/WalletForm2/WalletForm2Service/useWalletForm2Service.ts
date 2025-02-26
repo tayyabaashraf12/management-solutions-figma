@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-type Props = {};
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY; //  BscScan API key
 
 const useWalletForm2Helper = () => {

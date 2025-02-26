@@ -7,9 +7,7 @@ import FrameLogosContainer from "./FrameLogosContainer/FrameLogosContainer";
 import TextContainer from "./TextContainer/TextContainer";
 import NavigationButton from "../NavigationButton/NavigationButton";
 
-type Props = {};
-
-const Frame2 = (props: Props) => {
+const Frame2 = () => {
   return (
     <div className="w-[1440px] h-[1024px] top-[7062px] flex bg-[#071410] left-[7597px]">
       <>

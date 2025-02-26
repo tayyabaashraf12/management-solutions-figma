@@ -4,9 +4,7 @@ import Barcodeamico1 from "../../../../SVG/Barcode-amico 1.svg";
 import EditingBodyTextBro from "../../../../SVG/Editing body text-bro 1.svg";
 import ManagementContainer from "./ManagementContainer/ManagementContainer";
 
-type Props = {};
-
-const ManagementSolutuionsMain = (props: Props) => {
+const ManagementSolutuionsMain = () => {
   return (
     <div className="w-[906px] h-[940px] absolute top-[42px] left-[42px] rounded-[45px] bg-[#59BF78] ">
       <Image

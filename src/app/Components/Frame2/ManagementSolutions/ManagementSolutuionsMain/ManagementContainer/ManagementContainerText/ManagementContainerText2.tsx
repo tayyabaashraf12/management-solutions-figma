@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const ManagementContainerText2 = (props: Props) => {
+const ManagementContainerText2 = () => {
   return (
     <div
       className="w-[530px] h-[20px] left-[40px] top-[10px] relative  text-center capitalize

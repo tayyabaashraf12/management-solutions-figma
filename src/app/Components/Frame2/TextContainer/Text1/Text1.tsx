@@ -1,9 +1,6 @@
 import React from "react";
-import { Roboto, Koulen } from "next/font/google";
 
-type Props = {};
-
-const Text1 = (props: Props) => {
+const Text1 = () => {
   return (
     <div
       className="

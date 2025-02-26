@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const OrganizationText = (props: Props) => {
+const OrganizationText = () => {
   return (
     <div
       className="w-[158px] h-[25px] top-[457px] left-[639px] font-[Roboto] font-semibold text-[20px] leading-[25px]

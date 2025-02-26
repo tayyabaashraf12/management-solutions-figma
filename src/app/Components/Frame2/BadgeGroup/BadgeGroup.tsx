@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import Badge from "./Badge";
-import { useRouter } from "next/navigation";
-import { handleAuthentication } from "app/utils/AuthenticationUtils";
 
-type Props = {};
-
-const BadgeGroup = (props: Props) => {
+const BadgeGroup = () => {
   const [userEmail, setUserEmail] = useState("");
 
   return (
