@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Welcome from "./Welcome/Welcome";
 import BadgeGroup from "./BadgeGroup/BadgeGroup";
 import Google from "./Google/Google";

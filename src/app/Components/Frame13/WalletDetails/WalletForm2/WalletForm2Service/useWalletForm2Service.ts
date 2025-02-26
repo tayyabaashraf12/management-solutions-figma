@@ -1,10 +1,27 @@
 import { useState } from "react";
 
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY; //  BscScan API key
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY; // BscScan API key
 
-const useWalletForm2Helper = () => {
+interface Transaction {
+  blockNumber: string;
+  timeStamp: string;
+  hash: string;
+  from: string;
+  to: string;
+  value: string;
+  gas: string;
+  gasPrice: string;
+  isError: string;
+  txreceipt_status: string;
+  contractAddress: string;
+  cumulativeGasUsed: string;
+  gasUsed: string;
+  confirmations: string;
+}
+
+const useWalletForm2Service = () => {
   const [walletAddress, setWalletAddress] = useState("");
-  const [transactions, setTransactions] = useState<any[]>([]);
+  const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -25,7 +42,7 @@ const useWalletForm2Helper = () => {
       const data = await response.json();
 
       if (data.status === "1") {
-        setTransactions(data.result);
+        setTransactions(data.result as Transaction[]); // Ensure TypeScript knows the expected type
       } else {
         setError("No transactions found or invalid address");
         setTransactions([]);
@@ -48,4 +65,4 @@ const useWalletForm2Helper = () => {
   };
 };
 
-export default useWalletForm2Helper;
+export default useWalletForm2Service;

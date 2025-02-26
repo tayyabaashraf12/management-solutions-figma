@@ -6,27 +6,31 @@ export const handleAuthentication = async (
   userEmail: string,
   router: NextRouter
 ) => {
-  if (!web3) {
-    alert("Web3 is not available. Please ensure the web3 is installed.");
+  if (!window.ethereum) {
+    alert("MetaMask is not installed. Please install it to continue.");
     return;
   }
-  try {
-    const accounts = await window.ethereum.request({
-      method: "eth_requestAccounts",
-    });
-    console.log("Wallet connected successfully:", accounts[0]);
 
-    if (!accounts.length) {
+  try {
+    const accounts = (await window.ethereum.request({
+      method: "eth_requestAccounts",
+    })) as string[] | undefined;
+
+    if (!accounts || accounts.length === 0) {
       alert("Please connect your wallet.");
       return;
     }
+
+    const userWalletAddress: string = accounts[0]; // Ensuring the type is string
+    console.log("Wallet connected successfully:", userWalletAddress);
 
     if (!userEmail) {
       alert("Email is required.");
       return;
     }
-    /* Fetch user balance and navigate upon successful balance retrieval*/
-    const userBalance = await getUserBalance(accounts[0]);
+
+    // Fetch user balance and navigate upon successful balance retrieval
+    const userBalance = await getUserBalance(userWalletAddress);
     if (userBalance !== null) {
       router.push(`/screens/frame4`);
     } else {
