@@ -68,26 +68,26 @@ const Form: React.FC<Props> = ({ Balance }) => {
         </div>
       </form>
       <div className="mt-4 text-center">
-        <button
-          disabled={!transactionHash}
-          className={`inline-block px-4 py-2 rounded-md text-white font-bold transition ${
-            transactionHash
-              ? "bg-blue-500 hover:bg-blue-700 "
-              : "bg-gray-400 cursor-not-allowed"
-          }`}
-        >
-          <Link
-            href={
+        <div className="mt-4 text-center">
+          <button
+            disabled={!transactionHash}
+            onClick={() => {
+              if (transactionHash) {
+                window.open(
+                  `https://testnet.bscscan.com/tx/${transactionHash}`,
+                  "_blank"
+                );
+              }
+            }}
+            className={`inline-block px-4 py-2 rounded-md text-white font-bold transition ${
               transactionHash
-                ? `https://testnet.bscscan.com/tx/${transactionHash}`
-                : "#"
-            }
-            target="_blank"
-            className="block w-full h-full"
+                ? "bg-blue-500 hover:bg-blue-700 cursor-pointer"
+                : "bg-gray-400 cursor-not-allowed"
+            }`}
           >
             View Transaction
-          </Link>
-        </button>
+          </button>
+        </div>
       </div>
     </>
   );
