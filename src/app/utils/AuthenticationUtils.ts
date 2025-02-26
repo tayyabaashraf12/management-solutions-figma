@@ -1,9 +1,13 @@
 import web3 from "app/utils/Web3Helper";
 import { getUserBalance } from "app/utils/BalanceUtils";
+import { NextRouter } from "next/router";
 
-export const handleAuthentication = async (userEmail: string, router: any) => {
+export const handleAuthentication = async (
+  userEmail: string,
+  router: NextRouter
+) => {
   if (!web3) {
-    alert("Web3 is not available. Please ensure the wab3 is installed.");
+    alert("Web3 is not available. Please ensure the web3 is installed.");
     return;
   }
   try {
@@ -32,8 +36,3 @@ export const handleAuthentication = async (userEmail: string, router: any) => {
     console.error("Wallet connection or authentication failed:", error);
   }
 };
-
-/**Metamask or wallet connection will occur in try block */
-/**after promise resolving my metamask account  will be obtained as result that is called userAddress of wallet
- * that address will be used to access my digital assets present inside wallet such as BSC testnet and the contracts deployed on that
- */

@@ -6,9 +6,7 @@ import Search from "./Search/Search";
 import InventoryHeader from "./InventoryHeader/InventoryHeader";
 import HardwareText from "./HardwareText";
 
-type Props = {};
-
-const SystemInventoryHardware = (props: Props) => {
+const SystemInventoryHardware = () => {
   return (
     <div className="w-[975px] border-2 border-green-400 absolute h-[960px] top-[32px] left-[385px] rounded-[24px] bg-[#FFFFFF]">
       <InventoryHeader />

@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import NameTableHeader from "../../../../../../SVG/Tableheader1.svg";
 import TextAndSupportingText from "./TextAndSupportingText/TextAndSupportingText";
 
 const TableHeader = () => {

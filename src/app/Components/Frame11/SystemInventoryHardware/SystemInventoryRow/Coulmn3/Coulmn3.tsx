@@ -3,9 +3,7 @@ import TableHeader from "./TableHeader/TableHeader";
 import TableCell1 from "./TableCell1/TableCell1";
 import TableCell2 from "./TableCell2/TableCell2";
 
-type Props = {};
-
-const Coulmn3 = (props: Props) => {
+const Coulmn3 = () => {
   return (
     <div className="w-[164px] h-[188px] top-[167px] left-[477px] ">
       <TableHeader />

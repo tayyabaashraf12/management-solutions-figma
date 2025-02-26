@@ -1,9 +1,7 @@
 import React from "react";
 import Frame from "./Frame/Frame";
 
-type Props = {};
-
-const Filter = (props: Props) => {
+const Filter = () => {
   return (
     <div
       className="w-[110px] h-[41px] top-[86px] left-[713px] bg-[#FFFFFF] py-[10px] px-[19px]   flex gap-[10] rounded-[12px]

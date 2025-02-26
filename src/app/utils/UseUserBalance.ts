@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import { getUserBalance } from "./BalanceUtils";
 import connectWallet from "./WalletUtilty";
 
@@ -17,9 +16,11 @@ const useUserBalance = () => {
       );
       console.log("fetched Vote Token Balance:", fetchedVoteTokenBalance);
 
-      fetchedVoteTokenBalance
-        ? setBalance(fetchedVoteTokenBalance)
-        : alert("Failed to fetch balance.");
+      if (fetchedVoteTokenBalance) {
+        setBalance(fetchedVoteTokenBalance);
+      } else {
+        alert("Failed to fetch balance.");
+      }
     } catch (error) {
       console.error("Error fetching balance:", error);
     }
@@ -33,6 +34,3 @@ const useUserBalance = () => {
 };
 
 export default useUserBalance;
-/**useUserBalance is a custom hook in which I implemented User Vote Token Balance fetching functionality from Vote Contract
- * which is deployed on BSC Testnet
- */

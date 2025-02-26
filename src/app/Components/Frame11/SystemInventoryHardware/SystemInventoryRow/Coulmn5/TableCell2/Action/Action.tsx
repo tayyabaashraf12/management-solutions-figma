@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import ActionImage from "../../../../../../../SVG/Actions.svg";
 
-type Props = {};
-
-const Action = (props: Props) => {
+const Action = () => {
   return (
     <div className="w-[10px] h-[10px] border border-blue-600 ">
       <Image

@@ -2,9 +2,7 @@ import Image from "next/image";
 import React from "react";
 import BackArrow1 from "../../../../../../SVG/BackArrow1.svg";
 
-type Props = {};
-
-const Page1 = (props: Props) => {
+const Page1 = () => {
   return (
     <div
       className="w-[38px] h-[38px] rounded-[12px] p-[10px] flex 

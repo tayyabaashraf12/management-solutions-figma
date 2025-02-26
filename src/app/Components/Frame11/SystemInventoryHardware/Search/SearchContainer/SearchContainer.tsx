@@ -1,9 +1,7 @@
 import React from "react";
 import SearchRectangle from "./SearchRectangle/SearchRectangle";
 
-type Props = {};
-
-const SearchContainer = (props: Props) => {
+const SearchContainer = () => {
   return (
     <div
       className="w-[217.28px] h-[40px] rounded-xl
